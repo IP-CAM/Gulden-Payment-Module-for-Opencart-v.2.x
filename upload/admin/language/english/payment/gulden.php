@@ -24,7 +24,7 @@ $_['text_success']          = 'Success: You have modified Gulden details!';
 $_['text_edit']             = 'Edit Gulden';
 $_['text_google_api']       = 'Google API';
 $_['text_gulden']          = '<a href="https://gulden.com" target="_blank"><img src="view/image/payment/gulden.png" alt="Gulden" style="border: 1px solid #EEEEEE;" /></a>';
-$_['text_copyright']        = '<p><a href="https://github.com/biscayne/opencart-gulden" target="_blank">Gulden Payment for OpenCart</a></p><p>Version: 0.1.1</p>';
+$_['text_copyright']        = '<p><a href="https://github.com/biscayne/OCgulden" target="_blank">Gulden Payment for OpenCart</a></p><p>Version: 0.1.1</p>';
 
 
 // Entry
