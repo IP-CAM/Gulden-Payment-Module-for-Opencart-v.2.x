@@ -13,7 +13,7 @@
  *             Copyright (c) 2015 Eugene Lifescale (a.k.a. Shaman) by OpenCart Ukrainian Community (http://opencart-ukraine.tumblr.com)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU General Public License, Version 3
  */
-class ControllerPaymentGulden extends Controller {
+class ControllerExtensionPaymentGulden extends Controller {
     private $_gulden;
     public function __construct($registry) {
         parent::__construct($registry);
