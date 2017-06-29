@@ -18,7 +18,7 @@ class ControllerExtensionPaymentGulden extends Controller {
     public function __construct($registry) {
         parent::__construct($registry);
         // Load dependencies
-        $this->load->language('payment/gulden');
+        $this->load->language('extension/payment/gulden');
         $this->load->library('gulden');
         $this->load->model('checkout/order');
         // Connect to the server
