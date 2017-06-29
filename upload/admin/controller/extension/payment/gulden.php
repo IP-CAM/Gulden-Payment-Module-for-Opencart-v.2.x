@@ -23,7 +23,7 @@ class ControllerExtensionPaymentGulden extends Controller {
 
         // Load dependencies
         $this->load->model('setting/setting');
-        $data = $this->load->language('payment/gulden');
+        $data = $this->load->language('extension/payment/gulden');
 
         // Validate & save changes
         if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
@@ -55,11 +55,11 @@ class ControllerExtensionPaymentGulden extends Controller {
 
         $data['breadcrumbs'][] = array(
             'text' => $this->language->get('heading_title'),
-            'href' => $this->url->link('payment/gulden', 'token=' . $this->session->data['token'], 'SSL')
+            'href' => $this->url->link('extension/payment/gulden', 'token=' . $this->session->data['token'], 'SSL')
         );
 
         // Form processing
-        $data['action'] = $this->url->link('payment/gulden', 'token=' . $this->session->data['token'], 'SSL');
+        $data['action'] = $this->url->link('extension/payment/gulden', 'token=' . $this->session->data['token'], 'SSL');
         $data['cancel'] = $this->url->link('extension/payment', 'token=' . $this->session->data['token'], 'SSL');
 
         $this->load->model('localisation/order_status');
@@ -161,7 +161,7 @@ class ControllerExtensionPaymentGulden extends Controller {
         $this->load->library('gulden');
 
        // Check permissions
-        if (!$this->user->hasPermission('modify', 'payment/gulden')) {
+        if (!$this->user->hasPermission('modify', 'extension/payment/gulden')) {
             $this->error['warning'] = $this->language->get('error_permission');
         }
 
