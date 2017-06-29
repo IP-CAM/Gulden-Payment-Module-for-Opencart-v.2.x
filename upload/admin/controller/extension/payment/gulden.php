@@ -94,7 +94,7 @@ class ControllerExtensionPaymentGulden extends Controller {
         } else if ($this->config->get('gulden_port')) {
             $data['gulden_port'] = $this->config->get('gulden_port');
         } else {
-            $data['gulden_port'] = 8332;
+            $data['gulden_port'] = 9232;
         }
 
         if (isset($this->request->post['gulden_path'])) {
