@@ -64,7 +64,7 @@ class ControllerExtensionPaymentGulden extends Controller {
         if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/payment/gulden.tpl')) {
             return $this->load->view($this->config->get('config_template') . '/template/payment/gulden.tpl', $data);
         } else {
-            return $this->load->view('default/template/payment/gulden.tpl', $data);
+            return $this->load->view('payment/gulden.tpl', $data);
         }
     }
     public function confirm() {
